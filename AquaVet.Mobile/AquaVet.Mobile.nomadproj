@@ -5,13 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <CompiledOutputPath>distrib\</CompiledOutputPath>
     <OutputPath>bin\$(Configuration)</OutputPath>
-    <CordovaVersion>3.0</CordovaVersion>
+    <CordovaVersion>3.3</CordovaVersion>
     <BuildCloudVersion>2.0</BuildCloudVersion>
     <Name>AquaVet.Mobile</Name>
     <RootNamespace>AquaVet.Mobile</RootNamespace>
     <ProjectGuid>{8ba860a8-689a-4f51-bca3-309c8e25fea2}</ProjectGuid>
     <CertificatePath>Certificates\2014-04-18 - Nomad User</CertificatePath>
     <ProvisioningProfilePath>ProvisioningProfiles\ProfileAquaVet.mobileprovision</ProvisioningProfilePath>
+    <BundleID>com.example.aquavet.mobile</BundleID>
+    <Description />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
