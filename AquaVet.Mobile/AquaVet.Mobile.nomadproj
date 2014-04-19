@@ -257,36 +257,6 @@
     <Content Include="scripts\text.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="scripts\typings\breeze\breeze.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\durandal\durandal-1.x.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\durandal\durandal.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\jqueryui\jqueryui.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\jquery\jquery.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\knockout.validation\knockout.validation.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\knockout\knockout.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\moment\moment.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\q\Q.d.ts">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\typings\requirejs\require.d.ts">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="style\jquery.mobile-1.2.0.min.css">
       <SubType>Content</SubType>
     </Content>
@@ -315,21 +285,11 @@
     <Folder Include="scripts\durandal\" />
     <Folder Include="scripts\durandal\transitions" />
     <Folder Include="scripts\durandal\plugins\" />
-    <Folder Include="scripts\typings\" />
-    <Folder Include="scripts\typings\breeze\" />
-    <Folder Include="scripts\typings\durandal\" />
-    <Folder Include="scripts\typings\jqueryui\" />
-    <Folder Include="scripts\typings\jquery\" />
-    <Folder Include="scripts\typings\knockout.validation\" />
-    <Folder Include="scripts\typings\knockout\" />
-    <Folder Include="scripts\typings\moment\" />
-    <Folder Include="scripts\typings\q\" />
-    <Folder Include="scripts\typings\requirejs\" />
     <Folder Include="style" />
     <Folder Include="scripts" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
- <Target Name="ResolveReferences" />
+  <Target Name="ResolveReferences" />
   <Target Name="CoreCompile" />
   <Target Name="CreateManifestResourceNames" />
   <Target Name="CopyFilesToOutputDirectory">

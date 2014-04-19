@@ -15,7 +15,7 @@
         AssessmentList.prototype.activate = function (settings) {
             return this.loadAssessments().then(function () {
                 alert("success");
-            }).fail(function() { alert("faild"); });
+            }).fail(function(error) { alert("faild"+error); });
         };
 
         AssessmentList.prototype.deactivate = function () {
@@ -29,7 +29,7 @@
             var _this = this;
             this.assessments.removeAll();
             return this.unitOfWork.assessmentList.all()
-                    .then(_this.assessments);
+                    .then(_this.assessments).fail(function(error) { throw error; });
         };
 
 
