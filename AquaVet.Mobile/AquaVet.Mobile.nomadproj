@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
@@ -14,6 +14,7 @@
     <ProvisioningProfilePath>ProvisioningProfiles\ProfileAquaVet.mobileprovision</ProvisioningProfilePath>
     <BundleID>com.example.aquavet.mobile</BundleID>
     <Description />
+    <PreviewMethod>NomadSimulator</PreviewMethod>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,33 +23,313 @@
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="App\main.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\model\modelBuilder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\account.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\entitymanagerprovider.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\errorhandler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\logger.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\repository.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\unitofwork.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\services\utilities.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\viewmodels\assessment\assessmentlist.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\viewmodels\login.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\viewmodels\shell.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\views\assessment\assessmentlist.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\views\login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\views\shell.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\widgets\itemscontrol\view.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App\widgets\itemscontrol\viewmodel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="config.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="index.html" />
+    <Content Include="Content\bootstrap-theme.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\bootstrap-theme.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\bootstrap.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\bootstrap.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\css\font-awesome.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\css\font-awesome.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\durandal.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\fonts\fontawesome-webfont.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\fonts\fontawesome-webfont.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\fonts\fontawesome-webfont.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\fonts\fontawesome-webfont.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\fonts\FontAwesome.otf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\ie10mobile.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\images\icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\images\ios-startup-image-landscape.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\images\ios-startup-image-portrait.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\samples.css">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="cordova.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff">
       <SubType>Content</SubType>
     </Content>
     <Content Include="images\choosephoto.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\almond-custom.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\bootstrap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\bootstrap.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\breeze.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\breeze.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\breeze.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\activator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\app.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\binder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\composition.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\events.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\dialog.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\history.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\http.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\observable.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\serializer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\plugins\widget.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\system.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\transitions\entrance.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\viewEngine.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\durandal\viewLocator.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\jquery-1.6.4.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\jquery-2.1.0.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\jquery-2.1.0.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\jquery-2.1.0.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\jquery-2.1.0.min.map">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\jquery.mobile-1.2.0.min.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\knockout-3.1.0.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\knockout-3.1.0.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\q.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\q.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\r.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\require.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\text.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\breeze\breeze.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\durandal\durandal-1.x.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\durandal\durandal.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\jqueryui\jqueryui.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\jquery\jquery.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\knockout.validation\knockout.validation.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\knockout\knockout.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\moment\moment.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\q\Q.d.ts">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\typings\requirejs\require.d.ts">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="style\jquery.mobile-1.2.0.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="weyland-config.js">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\model" />
+    <Folder Include="App\widgets" />
+    <Folder Include="App\services" />
+    <Folder Include="App\services\assessment" />
+    <Folder Include="App\services\breeze" />
+    <Folder Include="App\viewmodels" />
+    <Folder Include="App\views" />
+    <Folder Include="App\viewmodels\assessment" />
+    <Folder Include="App\views\assessment" />
+    <Folder Include="App\widgets\itemscontrol" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\css\" />
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="fonts\" />
     <Folder Include="images" />
+    <Folder Include="App" />
+    <Folder Include="scripts\durandal\" />
+    <Folder Include="scripts\durandal\transitions" />
+    <Folder Include="scripts\durandal\plugins\" />
+    <Folder Include="scripts\typings\" />
+    <Folder Include="scripts\typings\breeze\" />
+    <Folder Include="scripts\typings\durandal\" />
+    <Folder Include="scripts\typings\jqueryui\" />
+    <Folder Include="scripts\typings\jquery\" />
+    <Folder Include="scripts\typings\knockout.validation\" />
+    <Folder Include="scripts\typings\knockout\" />
+    <Folder Include="scripts\typings\moment\" />
+    <Folder Include="scripts\typings\q\" />
+    <Folder Include="scripts\typings\requirejs\" />
     <Folder Include="style" />
     <Folder Include="scripts" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
-  <Target Name="ResolveReferences" />
+ <Target Name="ResolveReferences" />
   <Target Name="CoreCompile" />
   <Target Name="CreateManifestResourceNames" />
   <Target Name="CopyFilesToOutputDirectory">
