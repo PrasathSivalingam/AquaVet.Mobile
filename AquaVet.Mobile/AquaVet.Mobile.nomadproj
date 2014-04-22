@@ -74,6 +74,9 @@
     <Content Include="App\widgets\itemscontrol\viewmodel.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="AquaVetMobile.ipa">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="config.xml">
       <SubType>Content</SubType>
     </Content>
@@ -125,10 +128,16 @@
     <Content Include="Content\images\ios-startup-image-portrait.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Content\index.css">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Content\samples.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="cordova.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="cordova_plugins.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.eot">
@@ -216,9 +225,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\durandal\viewLocator.js">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="scripts\jquery-1.6.4.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\jquery-2.1.0.intellisense.js">
