@@ -39,9 +39,20 @@
             document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
         }
     </script>
+    <script type="text/javascript" charset="utf-8">
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Now safe to use device APIs
+    }
+    </script>
 
 </head>
-<body>
+<body onload="onLoad()">
     <div id="applicationHost">
         <div class="splash">
             <div class="message">
@@ -51,7 +62,10 @@
         </div>
     </div>
 
-    <script src="scripts/require.js" data-main="App/main"></script>     
+    <script src="scripts/require.js" data-main="App/main"></script>
+
+    
 </body>
+
 </html>
 
